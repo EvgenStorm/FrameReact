@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Roboto+Mono&display=swap');
+@import url();
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  width: 100% !important;
+  max-width: 1920px!important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+ 
+
+}
+.logos {
+  background-image: var(--logos-image);
+  transition: background-color 200ms linear;
+}
+.content {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:90%
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+#root {
+  display:flex;
+  width: 100%;
+  max-width: 1920px;
+  height:100vh;
+  padding:0;
+  background-color: var(--root-background-color);
+  transition: background-color 200ms linear;
+}
+.heads {
+  width:100%;
+}
+.navbar-brand {
+  margin-left: 100px;
+}
+.content {
+  margin-top: 100px ;
+  display:flex;
+  flex-wrap: wrap;
+  
+
+}
+
+.image-container {
+  position: relative;
+  width: 390px;
+  height: 255px;
+  background-size: 100%;
+  color: var(--text-color);
+  transition: all 200ms linear;
+
+color:var(--image-text-color);
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin:20px;
+  font-size: 16px;
+  line-height: 19.38px;
+
+
+}
+
+.image-container:hover {
+  background-size: 110%;
+ 
+
+}
+.text-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: var(--text-overlay-color);
+  transition: background-color 200ms linear;
+  opacity: 100%;
+  padding: 10px;
+  width: 80%;
+  border-left:var(--border-color); 
+}
+
+.text-overlay > .date {
+  text-align: start;
+  color:#AB8956
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.title {
+  text-align: start;
+}
+.date {
+  margin-top: 10px;
+}
+.dom2 {
+  label {
+    width: 32px; 
+    height: 26px; 
+    display: block; 
+    position: relative; 
+    
+   }
+}
+.dom2 {
+    position: absolute;
+    top: 10px !important;
+    right: 50px!important;
+}
+
+input[type="checkbox"] + span {
+  position: absolute; 
+  top:0px;
+  right:-3px;
+  width: 40px; height: 130%;
+  background: url(./assets/light_btn.png) no-repeat; 
+  cursor: pointer; 
+ }
+ input[type="checkbox"]:checked + span {
+  background: url(./assets/dark_btn.png) no-repeat;
+
+ }
+.navbar {
+  background-color:var(--navbar-color);
+  transition: background-color 200ms linear;
+}
+.date {
+  font-size: 18px;
+}
+html[data-theme='dark'] {
+  --root-background-color:#121212;
+  --text-overlay-color:#121212;
+  --logos-image:url(./assets/logo.png);
+  --text-color:white;
+  --navbar-color:#121212!important;
+  --image-text-color:#DFDFDF;
+  --border-color:#AB8956 2px solid
+}
+html[data-theme='light'] {
+  --root-background-color:#FFFFFF;
+  --text-overlay-color:#FFFFFF;
+  --logos-image:url(./assets/log1.png);
+  --text-color:black;
+  --navbar-color:white!important;
+  --image-text-color:#121212;
+  --border-color:#9B4B4B 2px solid;
+}
+.image-container > img {
+    width:390px;
+    height: 255px;
+}
